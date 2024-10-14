@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  canvas {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: crosshair;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .color-picker {
+    margin: 20px 0;
+  }
+  
+  .color-picker span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .color-picker input[type="radio"] {
+    margin: 0 5px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #ccc;
+  }
+  
+  .color-picker input[type="radio"]:checked {
+    border: 3px solid black;
+  }
+  
+  .color-picker input[value="#000000"] { background-color: black; }
+  .color-picker input[value="#FF5733"] { background-color: #FF5733; }
+  .color-picker input[value="#28A745"] { background-color: #28A745; }
+  .color-picker input[value="#007BFF"] { background-color: #007BFF; }
+  .color-picker input[value="#FFC107"] { background-color: #FFC107; }
+  .color-picker input[value="#FF33D4"] { background-color: #FF33D4; }
+  .color-picker input[value="#33CCFF"] { background-color: #33CCFF; }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #saveBtn {
+    background-color: #6C757D;
+    color: white;
+  }
+  
+  #clearBtn {
+    background-color: #FF5733;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #signatureImage {
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+    border: 2px solid #333;
+  }
+  

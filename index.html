@@ -1,0 +1,33 @@
+<!-- DRAWING SIGN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Pad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Draw Your Signature</h1>
+    <p>Use the canvas below to draw your signature.</p>
+    <canvas id="signatureCanvas"></canvas>
+    <div class="color-picker">
+      <span>Pick Color:</span>
+      <input type="radio" name="color" value="#000000" checked>
+      <input type="radio" name="color" value="#FF5733">
+      <input type="radio" name="color" value="#28A745">
+      <input type="radio" name="color" value="#007BFF">
+      <input type="radio" name="color" value="#FFC107">
+      <input type="radio" name="color" value="#FF33D4">
+      <input type="radio" name="color" value="#33CCFF">
+    </div>
+    <div class="buttons">
+      <button id="saveBtn">Save as PNG</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+    <img id="signatureImage" alt="Your signature will appear here">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
